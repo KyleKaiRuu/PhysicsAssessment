@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 27d0f0fb8e18f104fb69941b43167e97
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature.000
+    100002: bag
+    100004: bag_end
+    100006: bod
+    100008: Camera
+    100010: cape1
+    100012: cape2
+    100014: cape2_end
+    100016: cape3
+    100018: cape4
+    100020: cape4_end
+    100022: Chest
+    100024: Head
+    100026: Head_end
+    100028: helm.003
+    100030: Hips
+    100032: Lamp
+    100034: Left ankle
+    100036: Left arm
+    100038: Left elbow
+    100040: Left knee
+    100042: Left leg
+    100044: Left pauldron
+    100046: Left pauldron_end
+    100048: Left shoulder
+    100050: Left toe
+    100052: Left toe_end
+    100054: Left wrist
+    100056: LeftHandIndex1
+    100058: LeftHandIndex2
+    100060: LeftHandIndex3
+    100062: LeftHandIndex3_end
+    100064: LeftHandMiddle1
+    100066: LeftHandMiddle2
+    100068: LeftHandMiddle3
+    100070: LeftHandMiddle3_end
+    100072: LeftHandPinky1
+    100074: LeftHandPinky2
+    100076: LeftHandPinky3
+    100078: LeftHandPinky3_end
+    100080: LeftHandRing1
+    100082: LeftHandRing2
+    100084: LeftHandRing3
+    100086: LeftHandRing3_end
+    100088: LeftHandThumb1
+    100090: LeftHandThumb2
+    100092: LeftHandThumb3
+    100094: LeftHandThumb3_end
+    100096: Neck
+    100098: //RootNode
+    100100: Right ankle
+    100102: Right arm
+    100104: Right elbow
+    100106: Right knee
+    100108: Right leg
+    100110: Right pauldron
+    100112: Right pauldron_end
+    100114: Right shoulder
+    100116: Right toe
+    100118: Right toe_end
+    100120: Right wrist
+    100122: RightHandIndex1
+    100124: RightHandIndex2
+    100126: RightHandIndex3
+    100128: RightHandIndex3_end
+    100130: RightHandMiddle1
+    100132: RightHandMiddle2
+    100134: RightHandMiddle3
+    100136: RightHandMiddle3_end
+    100138: RightHandPinky1
+    100140: RightHandPinky2
+    100142: RightHandPinky3
+    100144: RightHandPinky3_end
+    100146: RightHandRing1
+    100148: RightHandRing2
+    100150: RightHandRing3
+    100152: RightHandRing3_end
+    100154: RightHandThumb1
+    100156: RightHandThumb2
+    100158: RightHandThumb3
+    100160: RightHandThumb3_end
+    100162: sheath
+    100164: sheath_end
+    100166: Spine
+    400000: Armature.000
+    400002: bag
+    400004: bag_end
+    400006: bod
+    400008: Camera
+    400010: cape1
+    400012: cape2
+    400014: cape2_end
+    400016: cape3
+    400018: cape4
+    400020: cape4_end
+    400022: Chest
+    400024: Head
+    400026: Head_end
+    400028: helm.003
+    400030: Hips
+    400032: Lamp
+    400034: Left ankle
+    400036: Left arm
+    400038: Left elbow
+    400040: Left knee
+    400042: Left leg
+    400044: Left pauldron
+    400046: Left pauldron_end
+    400048: Left shoulder
+    400050: Left toe
+    400052: Left toe_end
+    400054: Left wrist
+    400056: LeftHandIndex1
+    400058: LeftHandIndex2
+    400060: LeftHandIndex3
+    400062: LeftHandIndex3_end
+    400064: LeftHandMiddle1
+    400066: LeftHandMiddle2
+    400068: LeftHandMiddle3
+    400070: LeftHandMiddle3_end
+    400072: LeftHandPinky1
+    400074: LeftHandPinky2
+    400076: LeftHandPinky3
+    400078: LeftHandPinky3_end
+    400080: LeftHandRing1
+    400082: LeftHandRing2
+    400084: LeftHandRing3
+    400086: LeftHandRing3_end
+    400088: LeftHandThumb1
+    400090: LeftHandThumb2
+    400092: LeftHandThumb3
+    400094: LeftHandThumb3_end
+    400096: Neck
+    400098: //RootNode
+    400100: Right ankle
+    400102: Right arm
+    400104: Right elbow
+    400106: Right knee
+    400108: Right leg
+    400110: Right pauldron
+    400112: Right pauldron_end
+    400114: Right shoulder
+    400116: Right toe
+    400118: Right toe_end
+    400120: Right wrist
+    400122: RightHandIndex1
+    400124: RightHandIndex2
+    400126: RightHandIndex3
+    400128: RightHandIndex3_end
+    400130: RightHandMiddle1
+    400132: RightHandMiddle2
+    400134: RightHandMiddle3
+    400136: RightHandMiddle3_end
+    400138: RightHandPinky1
+    400140: RightHandPinky2
+    400142: RightHandPinky3
+    400144: RightHandPinky3_end
+    400146: RightHandRing1
+    400148: RightHandRing2
+    400150: RightHandRing3
+    400152: RightHandRing3_end
+    400154: RightHandThumb1
+    400156: RightHandThumb2
+    400158: RightHandThumb3
+    400160: RightHandThumb3_end
+    400162: sheath
+    400164: sheath_end
+    400166: Spine
+    4300000: bod
+    4300002: helm.003
+    7400000: Armature.000|tpose
+    7400002: Armature.000|vridle
+    7400004: Armature.000|vridleleft
+    7400006: Armature.000|vridleright
+    7400008: Armature.000|vrleftfist
+    7400010: Armature.000|vrleftgrab
+    7400012: Armature.000|vrleftpoint
+    7400014: Armature.000|vrrightfist
+    7400016: Armature.000|vrrightgrab
+    7400018: Armature.000|vrrightpoint
+    7400020: bod|tpose
+    9500000: //RootNode
+    13700000: bod
+    13700002: helm.003
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: f611e02b2949eae4a8bf27e929475945, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: belt
+    second: {fileID: 2100000, guid: d136fbb79fde59541bc8715db138f29f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gloves
+    second: {fileID: 2100000, guid: 0af6d28fd2982e940b75e57e2c7ceb4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gloves.003
+    second: {fileID: 2100000, guid: d59f0fc58cf2e6d4d9cd01478075e509, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gloves.007
+    second: {fileID: 2100000, guid: 25269ea00eecabb49a22d033ec24ecd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: helm
+    second: {fileID: 2100000, guid: 2ff91b58cdddd2e45a7a6fe59303cfca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: helm.001
+    second: {fileID: 2100000, guid: ed08c611944bdd7469d931145161eab6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: helm2
+    second: {fileID: 2100000, guid: 36ad348986721fa448e7b8a227bbcab7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: helm2.001
+    second: {fileID: 2100000, guid: f8bed17b73f2ab148a5d9cb94a439a28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shirt1
+    second: {fileID: 2100000, guid: aa8e1e2a079cfa648896ff384bc33c47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shirt2
+    second: {fileID: 2100000, guid: e9be81f59036497478716053babf41c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sword1
+    second: {fileID: 2100000, guid: 368b3d6c96cb34842840180114eb753e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sword2
+    second: {fileID: 2100000, guid: cce83a6fb61d02442bcb71459205e478, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
