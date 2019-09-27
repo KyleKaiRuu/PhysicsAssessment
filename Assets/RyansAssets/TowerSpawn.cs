@@ -6,8 +6,9 @@ public class TowerSpawn : MonoBehaviour
 {
 
     public GameObject towerLayer;
-    public int towerHeight = 1;
+    public uint towerHeight = 1;
     public float towerLayerRotation = 10.0f;
+    public uint bricksPerLayer = 8;
 
     private Quaternion currRotation = Quaternion.identity;
     private Vector3 currPos;
@@ -20,7 +21,12 @@ public class TowerSpawn : MonoBehaviour
 
         for (int i = 0; i < towerHeight; i++)
         {
-            Instantiate(towerLayer, currPos, currRotation);
+            GameObject layer = Instantiate(towerLayer, currPos, currRotation, transform);
+            LayerSpawn layerSpawn = layer.GetComponent<LayerSpawn>();
+            if (layerSpawn != null)
+            {
+                layerSpawn.bricksPerLayer = bricksPerLayer;
+            }
             currRotation = currRotation * Quaternion.AngleAxis(towerLayerRotation, Vector3.up);
             currPos += new Vector3(0, 1.00f, 0);
         }
