@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class MoveForawrd : MonoBehaviour
 {
+    public Vector3 forward;
+    public float force;
     // Start is called before the first frame update
     void Start()
     {
-        
+        forward = gameObject.transform.forward;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        gameObject.transform.position += new Vector3(0, 0, 1);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            gameObject.GetComponent<Rigidbody>().AddForce(forward * 100000.0f);
+        }
     }
 }
