@@ -17,7 +17,7 @@ public class MoveForawrd : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            gameObject.GetComponent<Rigidbody>().AddForce(forward * 100000.0f);
+            gameObject.GetComponent<Rigidbody>().AddForce(forward * force);
         }
     }
 }
