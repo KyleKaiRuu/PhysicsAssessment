@@ -8,8 +8,9 @@ public class EnableRag : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (/*other.gameObject.name == "Cube" || other.gameObject.name.Contains("p3vr")*/!other.gameObject.transform.IsChildOf(gameObject.transform) && other.gameObject.name != "Plane" && !other.gameObject.name.Contains("Brick"))
+        if (other.gameObject.name != "Plane")
         {
+            Debug.Log(other.gameObject.name);
             foreach (Rigidbody rigi in rigidbodies)
             {
                 rigi.isKinematic = false;
