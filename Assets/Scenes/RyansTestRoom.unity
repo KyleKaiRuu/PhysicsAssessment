@@ -239,7 +239,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 771251075}
   angle: 45
-  cannonBall: {fileID: 145956, guid: 6f72acf8db58876478830a2b18caec5d, type: 3}
+  cannonBall: {fileID: 8735777978362892408, guid: e41ace788bda9d94a8cb4c9110add232,
+    type: 3}
+  timeTillImpact: 4
 --- !u!1 &983493555
 GameObject:
   m_ObjectHideFlags: 0
