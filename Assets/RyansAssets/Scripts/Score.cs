@@ -26,7 +26,7 @@ public class Score : MonoBehaviour
         }
         else if (collision.gameObject.tag != "bottom")
         {
-            kills += collision.gameObject.GetComponent<RandomScore>().num;
+            kills += (int)collision.gameObject.GetComponent<RandomScore>().num;
             Destroy(collision.gameObject);
         }
     }
