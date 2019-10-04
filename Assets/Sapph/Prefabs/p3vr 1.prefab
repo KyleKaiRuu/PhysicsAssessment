@@ -49,7 +49,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!144 &3497494987531962602
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -158,7 +158,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!144 &3497494987657611794
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -389,7 +389,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!144 &3497494987711582896
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -498,7 +498,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!144 &3497494988113451088
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -1848,7 +1848,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &3497494988339019090
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2080,7 +2080,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!144 &3497494988451377514
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -2190,7 +2190,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!144 &3497494987057400908
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -2389,7 +2389,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!144 &3497494987418181373
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -2492,9 +2492,9 @@ GameObject:
   - component: {fileID: 3497494988115841830}
   - component: {fileID: 3497494987417543377}
   - component: {fileID: 3497494987417543378}
-  - component: {fileID: 2934441702241035624}
+  - component: {fileID: 3497494987417543379}
   m_Layer: 9
-  m_Name: p3vr
+  m_Name: p3vr 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2553,7 +2553,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &3497494987417543378
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2567,7 +2567,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.509941, y: 8.283873, z: 1}
   m_Center: {x: -0.24159159, y: 3.6419363, z: 0.00000029995897}
---- !u!114 &2934441702241035624
+--- !u!114 &3497494987417543379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2576,9 +2576,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 3497494988123267396}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7baf1da2bb336e41a0a3a3de5112378, type: 3}
+  m_Script: {fileID: 11500000, guid: aff5f2f42f000fb44a4ed1ef24304420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigidbodies:
+  - {fileID: 3497494988339019091}
+  - {fileID: 3497494987711582897}
+  - {fileID: 3497494988113451103}
+  - {fileID: 3497494988581719592}
+  - {fileID: 3497494987523096939}
+  - {fileID: 3497494987057400909}
 --- !u!1 &3497494988123267398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2690,7 +2697,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!144 &3497494988581719607
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -2799,7 +2806,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!144 &3497494987523096940
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -2908,7 +2915,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!144 &3497494988981201153
 CharacterJoint:
   m_ObjectHideFlags: 0
