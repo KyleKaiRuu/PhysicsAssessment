@@ -27,6 +27,7 @@ public class CannonBall : MonoBehaviour
                 target = hit.point;
                 GameObject projectile = Instantiate(cannonBall, transform.position, Quaternion.identity);
                 projectile.GetComponent<Rigidbody>().velocity = BalisticVelocity(target, angle);
+                //projectile.GetComponent<Rigidbody>().useGravity = false;
                 Destroy(projectile, 10);
             }
         }
