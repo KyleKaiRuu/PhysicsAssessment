@@ -30,7 +30,7 @@ public class ChainWallSpawn : MonoBehaviour
             wallSpawn.height = walls[i].height;
             wallSpawn.spacing = walls[i].spacing;
             wallSpawn.anchorIsMid = false;
-            hold.transform.localPosition = i == 0 ? Vector3.zero : new Vector3(walls[i].width * 3 + walls[i].spacing * walls[i].width, 0, 0);
+            hold.transform.localPosition = i == 0 ? Vector3.zero : new Vector3(walls[i-1].width * 3 + walls[i-1].spacing * walls[i-1].width, 0, 0);
             hold.transform.localRotation = Quaternion.AngleAxis(walls[i].rotation, Vector3.up);
 
             lastWall = hold.transform;
