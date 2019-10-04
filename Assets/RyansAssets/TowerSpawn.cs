@@ -10,10 +10,11 @@ public class TowerSpawn : MonoBehaviour
     public float towerLayerRotation = 10.0f;
     public uint bricksPerLayer = 8;
     public bool flipLayer = false;
+    private List<GameObject> firstLayer;
 
     private Quaternion currRotation = Quaternion.identity;
     private Vector3 currPos;
-
+    private bool support = true;
 
     // Start is called before the first frame update
     void Start()
@@ -54,7 +55,16 @@ public class TowerSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (support)
+        {
+            for (int j = 0; j < transform.GetChild(0).gameObject.transform.childCount; j++)
+            {
+                transform.GetChild(0).gameObject.transform.GetChild(j).tag = "bottom";
+            }
+            support = false;
+        }
 
     }
+
+   
 }
