@@ -26,7 +26,7 @@ public class CannonBall : MonoBehaviour
             {
                 target = hit.point;
                 GameObject projectile = Instantiate(cannonBall, transform.position, Quaternion.identity);
-                projectile.GetComponent<Rigidbody>().velocity = BalisticVelocity(target, angle);
+                projectile.GetComponent<Rigidbody>().velocity = CalculateLaunchVelocityForTime(transform.position,target,2);
                 Destroy(projectile, 15);
             }
         }
@@ -43,5 +43,20 @@ public class CannonBall : MonoBehaviour
         dist += h / Mathf.Tan(a);
         float vel = Mathf.Sqrt(dist * Physics.gravity.magnitude / Mathf.Sin(2 * a));
         return vel * dir.normalized;
+
+
+
+    }
+
+    Vector3 CalculateLaunchVelocityForTime(Vector3 start, Vector3 target, float time)
+    {
+        //this is terrys stoof
+        Vector3 launchVelocity;
+        launchVelocity.x = (target.x - start.x) / time;
+        launchVelocity.z = (target.z - start.z) / time;
+
+        launchVelocity.y = (target.y + 0.5f * -Physics.gravity.y * time * time - start.y) / time;
+
+        return launchVelocity;
     }
 }
