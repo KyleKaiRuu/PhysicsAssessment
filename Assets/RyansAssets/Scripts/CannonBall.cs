@@ -7,15 +7,12 @@ public class CannonBall : MonoBehaviour
     public Camera mainCamera;
     public float angle;
     public GameObject cannonBall;
+    public int timeTillImpact = 4;
 
     private Vector3 target;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
-    // Update is called once per frame
+   
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -26,27 +23,12 @@ public class CannonBall : MonoBehaviour
             {
                 target = hit.point;
                 GameObject projectile = Instantiate(cannonBall, transform.position, Quaternion.identity);
-                projectile.GetComponent<Rigidbody>().velocity = CalculateLaunchVelocityForTime(transform.position,target,2);
+                projectile.GetComponent<Rigidbody>().velocity = CalculateLaunchVelocityForTime(transform.position,target, timeTillImpact);
                 Destroy(projectile, 15);
             }
         }
     }
 
-    public Vector3 BalisticVelocity(Vector3 target, float fireangle)
-    {
-        Vector3 dir = target - transform.position;
-        float h = dir.y;
-        //dir.y = 0;
-        float dist = dir.magnitude;
-        float a = fireangle * Mathf.Deg2Rad;
-        dir.y = dist * Mathf.Tan(a);
-        dist += h / Mathf.Tan(a);
-        float vel = Mathf.Sqrt(dist * Physics.gravity.magnitude / Mathf.Sin(2 * a));
-        return vel * dir.normalized;
-
-
-
-    }
 
     Vector3 CalculateLaunchVelocityForTime(Vector3 start, Vector3 target, float time)
     {
@@ -59,4 +41,18 @@ public class CannonBall : MonoBehaviour
 
         return launchVelocity;
     }
+
+    // did not reach target if y value was to high
+    //public Vector3 BalisticVelocity(Vector3 target, float fireangle)
+    //{
+    //    Vector3 dir = target - transform.position;
+    //    float h = dir.y;
+    //    //dir.y = 0;
+    //    float dist = dir.magnitude;
+    //    float a = fireangle * Mathf.Deg2Rad;
+    //    dir.y = dist * Mathf.Tan(a);
+    //    dist += h / Mathf.Tan(a);
+    //    float vel = Mathf.Sqrt(dist * Physics.gravity.magnitude / Mathf.Sin(2 * a));
+    //    return vel * dir.normalized;
+    //}
 }
