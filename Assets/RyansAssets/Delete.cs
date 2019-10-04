@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class Delete : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
+    //deletes the emptys when that are no longer needed to store the bricks
 
-    // Update is called once per frame
     void Update()
     {
         if (transform.childCount == 0)
