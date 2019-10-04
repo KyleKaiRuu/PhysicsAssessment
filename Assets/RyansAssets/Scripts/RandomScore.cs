@@ -16,14 +16,17 @@ public class RandomScore : MonoBehaviour
         if (num > 75)
         {
             gameObject.GetComponent<MeshRenderer>().material = blue;
+            gameObject.GetComponent<Rigidbody>().mass = .4f;
         }
         else if (num > 50)
         {
             gameObject.GetComponent<MeshRenderer>().material = green;
+            gameObject.GetComponent<Rigidbody>().mass = .3f;
         }
         else if (num > 25)
         {
             gameObject.GetComponent<MeshRenderer>().material = red;
+            gameObject.GetComponent<Rigidbody>().mass = .2f;
         }
         
     }
