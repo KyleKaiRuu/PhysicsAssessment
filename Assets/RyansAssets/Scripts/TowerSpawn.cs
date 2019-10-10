@@ -14,7 +14,7 @@ public class TowerSpawn : MonoBehaviour
 
     private Quaternion currRotation = Quaternion.identity;
     private Vector3 currPos;
-    private bool support = true;
+    //private bool support = true;
 
     // Start is called before the first frame update
     void Start()
