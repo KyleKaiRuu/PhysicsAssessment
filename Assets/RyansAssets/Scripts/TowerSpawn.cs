@@ -55,14 +55,14 @@ public class TowerSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (support)
-        {
-            for (int j = 0; j < transform.GetChild(0).gameObject.transform.childCount; j++)
-            {
-                transform.GetChild(0).gameObject.transform.GetChild(j).tag = "bottom";
-            }
-            support = false;
-        }
+        //if (support)
+        //{
+        //    for (int j = 0; j < transform.GetChild(0).gameObject.transform.childCount; j++)
+        //    {
+        //        transform.GetChild(0).gameObject.transform.GetChild(j).tag = "bottom";
+        //    }
+        //    support = false;
+        //}
 
     }
 

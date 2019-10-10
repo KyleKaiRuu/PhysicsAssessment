@@ -8,7 +8,7 @@ public class RandomScore : MonoBehaviour
     public Material red;
     public Material green;
     public Material blue;
-    private bool set = false;
+
     // Start is called before the first frame update
     void Start()
     {
