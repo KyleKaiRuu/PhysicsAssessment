@@ -4248,6 +4248,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bricksDestroyed: {fileID: 983493557}
+  lavaSplash: {fileID: 6831622309079986818, guid: 2fc8b903755b25e478600ac08123d327,
+    type: 3}
 --- !u!114 &1591821683
 MonoBehaviour:
   m_ObjectHideFlags: 0
