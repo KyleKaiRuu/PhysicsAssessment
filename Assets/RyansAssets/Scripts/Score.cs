@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     public Text bricksDestroyed;
+    public GameObject lavaSplash;
     private int kills;
+    private Vector3 splashPos;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,16 @@ public class Score : MonoBehaviour
         }
         else if (collision.gameObject.tag != "bottom")
         {
+            splashPos = Vector3.zero;
+            for(int i = 0; i < collision.contactCount; i++)
+            {
+                splashPos += collision.contacts[i].point;
+            }
+            splashPos.y = 0;
+            splashPos = splashPos / collision.contactCount;
+
+            Instantiate(lavaSplash, splashPos, Quaternion.identity);
+
             kills += (int)collision.gameObject.GetComponent<RandomScore>().num;
             Destroy(collision.gameObject);
         }
