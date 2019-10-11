@@ -16,10 +16,10 @@ public class Butoons : MonoBehaviour
         {
 
             //bomb.gameObject.GetComponent<SphereCollider>().radius += 1;
-            bomb.transform.localScale += new Vector3(1,1,1);
+            bomb.transform.localScale +=new Vector3(1,1,1);
             Debug.Log("increase");
             //Destroy(bomb, 10);
-        
+        bomb.gameObject.transform.localScale+= new Vector3(1, 1, 1);
         }
         if (bomb == null)
         {
