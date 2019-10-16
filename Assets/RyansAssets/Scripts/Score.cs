@@ -22,7 +22,11 @@ public class Score : MonoBehaviour
     }
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "cannonball")
+        if (collision.gameObject.tag == "explosion")
+        {
+            Debug.Log("boom");
+        }
+        else if (collision.gameObject.tag == "cannonball")
         {
             Destroy(collision.gameObject);
         }

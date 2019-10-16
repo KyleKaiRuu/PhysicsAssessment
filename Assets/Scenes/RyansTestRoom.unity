@@ -2038,7 +2038,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Explosion
 --- !u!222 &863593138
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2331,7 +2331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocitySlider: {fileID: 346174573}
-  bomb: {fileID: 1298256833227823815, guid: 5d90466512b9459429889c74fb59c5d3, type: 3}
+  bomb: {fileID: 7354663756384472659, guid: 6d1cc62d2fd31cc4ea40a4f9f0408392, type: 3}
 --- !u!1 &983493555
 GameObject:
   m_ObjectHideFlags: 0

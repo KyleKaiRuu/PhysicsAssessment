@@ -9,21 +9,22 @@ public class Butoons : MonoBehaviour
     public Slider velocitySlider;
     private bool explode = false;
     public GameObject bomb;
+    private GameObject boom;
 
     private void Update()
     {
-        if (explode)
+        if (boom == null)
+        {
+           explode = false;
+        }
+        else if (explode)
         {
 
             //bomb.gameObject.GetComponent<SphereCollider>().radius += 1;
-            bomb.transform.localScale +=new Vector3(1,1,1);
+            boom.transform.localScale +=new Vector3(5,5,5);
             Debug.Log("increase");
             //Destroy(bomb, 10);
-        bomb.gameObject.transform.localScale+= new Vector3(1, 1, 1);
-        }
-        if (bomb == null)
-        {
-           explode = false;
+       // bomb.gameObject.transform.localScale+= new Vector3(1, 1, 1);
         }
     }
     public void ShowTimeTillImpact(Text label)
@@ -32,10 +33,11 @@ public class Butoons : MonoBehaviour
     }
     public void Explode(/*GameObject boom*/)
     {
-        Instantiate(bomb);
+        Destroy(boom);
+        boom = Instantiate(bomb);
         //bomb = boom;
         //bomb.gameObject.GetComponent<SphereCollider>().radius = 1;
         explode = true;
-       
+        Destroy(boom, 5);
     }
 }
