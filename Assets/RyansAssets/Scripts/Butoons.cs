@@ -12,6 +12,7 @@ public class Butoons : MonoBehaviour
     private GameObject boom;
     public Toggle cannonToggle;
     public CannonBall cannon;
+    public Laser laser;
 
     private void Update()
     {
@@ -39,5 +40,9 @@ public class Butoons : MonoBehaviour
     public void activateCannon()
     {
         cannon.active = !cannon.active;
+    }
+    public void ActivateLaser()
+    {
+        laser.active = !laser.active;
     }
 }

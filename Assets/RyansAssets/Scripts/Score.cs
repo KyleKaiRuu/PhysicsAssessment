@@ -24,7 +24,7 @@ public class Score : MonoBehaviour
     {
         if (collision.gameObject.tag == "explosion")
         {
-            Debug.Log("boom");
+            //Debug.Log("boom");
         }
         else if (collision.gameObject.tag == "cannonball")
         {
