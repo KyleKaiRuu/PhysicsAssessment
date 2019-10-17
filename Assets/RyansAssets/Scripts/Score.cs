@@ -42,7 +42,8 @@ public class Score : MonoBehaviour
 
             Instantiate(lavaSplash, splashPos, Quaternion.identity);
 
-            kills += (int)collision.gameObject.GetComponent<RandomScore>().num;
+            //kills += (int)collision.gameObject.GetComponent<RandomScore>().num;
+            kills++;
             Destroy(collision.gameObject);
         }
     }

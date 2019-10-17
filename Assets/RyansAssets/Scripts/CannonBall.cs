@@ -10,21 +10,24 @@ public class CannonBall : MonoBehaviour
     public int timeTillImpact = 4;
 
     private Vector3 target;
-   
+    public bool active = true;
 
    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            RaycastHit hit;
-            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit))
+            if (active)
             {
-                target = hit.point;
-                GameObject projectile = Instantiate(cannonBall, transform.position, Quaternion.identity);
-                projectile.GetComponent<Rigidbody>().velocity = CalculateLaunchVelocityForTime(transform.position,target, timeTillImpact);
-                Destroy(projectile, 15);
+                RaycastHit hit;
+                Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out hit))
+                {
+                    target = hit.point;
+                    GameObject projectile = Instantiate(cannonBall, transform.position, Quaternion.identity);
+                    projectile.GetComponent<Rigidbody>().velocity = CalculateLaunchVelocityForTime(transform.position, target, timeTillImpact);
+                    Destroy(projectile, 15);
+                }
             }
         }
     }

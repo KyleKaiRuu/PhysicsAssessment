@@ -10,6 +10,8 @@ public class Butoons : MonoBehaviour
     private bool explode = false;
     public GameObject bomb;
     private GameObject boom;
+    public Toggle cannonToggle;
+    public CannonBall cannon;
 
     private void Update()
     {
@@ -18,26 +20,24 @@ public class Butoons : MonoBehaviour
            explode = false;
         }
         else if (explode)
-        {
-
-            //bomb.gameObject.GetComponent<SphereCollider>().radius += 1;
-            boom.transform.localScale +=new Vector3(5,5,5);
-            Debug.Log("increase");
-            //Destroy(bomb, 10);
-       // bomb.gameObject.transform.localScale+= new Vector3(1, 1, 1);
+        {            
+            boom.transform.localScale +=new Vector3(5,5,5);           
         }
     }
     public void ShowTimeTillImpact(Text label)
     {
         label.text = velocitySlider.value.ToString();
     }
-    public void Explode(/*GameObject boom*/)
+    public void Explode()
     {
         Destroy(boom);
-        boom = Instantiate(bomb);
-        //bomb = boom;
-        //bomb.gameObject.GetComponent<SphereCollider>().radius = 1;
+        boom = Instantiate(bomb);       
         explode = true;
         Destroy(boom, 5);
+    }
+
+    public void activateCannon()
+    {
+        cannon.active = !cannon.active;
     }
 }
