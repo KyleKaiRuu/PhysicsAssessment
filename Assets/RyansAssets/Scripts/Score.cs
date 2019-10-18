@@ -28,7 +28,17 @@ public class Score : MonoBehaviour
         }
         else if (collision.gameObject.tag == "cannonball")
         {
+            splashPos = Vector3.zero;
+            for (int i = 0; i < collision.contactCount; i++)
+            {
+                splashPos += collision.contacts[i].point;
+            }
+            splashPos.y = 0;
+            splashPos = splashPos / collision.contactCount;
+
+            Instantiate(lavaSplash, splashPos, Quaternion.identity);
             Destroy(collision.gameObject);
+
         }
         else if (collision.gameObject.tag != "bottom")
         {
