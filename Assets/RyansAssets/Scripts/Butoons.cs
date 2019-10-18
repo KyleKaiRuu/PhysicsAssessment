@@ -10,9 +10,10 @@ public class Butoons : MonoBehaviour
     private bool explode = false;
     public GameObject bomb;
     private GameObject boom;
-    public Toggle cannonToggle;
     public CannonBall cannon;
     public Laser laser;
+    public GodsHand hand;
+    
 
     private void Update()
     {
@@ -45,4 +46,9 @@ public class Butoons : MonoBehaviour
     {
         laser.active = !laser.active;
     }
+    public void ActivateGodsHand()
+    {
+        hand.active = !hand.active;
+    }
+   
 }
