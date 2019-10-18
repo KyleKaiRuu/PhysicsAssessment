@@ -8,7 +8,7 @@ public class EnableRag : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name != "Plane")
+        if (other.gameObject.name != "Platform")
         {
             Debug.Log(other.gameObject.name);
             foreach (Rigidbody rigi in rigidbodies)
