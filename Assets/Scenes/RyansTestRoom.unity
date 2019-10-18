@@ -1066,7 +1066,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2695,6 +2695,7 @@ GameObject:
   - component: {fileID: 983473599}
   - component: {fileID: 983473601}
   - component: {fileID: 983473602}
+  - component: {fileID: 983473603}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -2768,6 +2769,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 771251075}
   active: 0
+--- !u!114 &983473603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983473598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca6cfc8ef4f73954986eebf96157f916, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  mainCamera: {fileID: 771251075}
+  horizontal: 1
+  vertical: 0
 --- !u!1 &983493555
 GameObject:
   m_ObjectHideFlags: 0
@@ -3085,7 +3102,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4881,7 +4898,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
