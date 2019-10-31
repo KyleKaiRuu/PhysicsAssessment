@@ -13,17 +13,18 @@ public class Butoons : MonoBehaviour
     public CannonBall cannon;
     public Laser laser;
     public GodsHand hand;
-    
+    public WreckingBall ball;
+
 
     private void Update()
     {
         if (boom == null)
         {
-           explode = false;
+            explode = false;
         }
         else if (explode)
-        {            
-            boom.transform.localScale +=new Vector3(5,5,5);           
+        {
+            boom.transform.localScale += new Vector3(5, 5, 5);
         }
     }
     public void ShowTimeTillImpact(Text label)
@@ -33,7 +34,7 @@ public class Butoons : MonoBehaviour
     public void Explode()
     {
         Destroy(boom);
-        boom = Instantiate(bomb);       
+        boom = Instantiate(bomb);
         explode = true;
         Destroy(boom, 5);
     }
@@ -49,6 +50,14 @@ public class Butoons : MonoBehaviour
     public void ActivateGodsHand()
     {
         hand.active = !hand.active;
+    }
+    public void ActiveWreckingBall()
+    {
+        ball.active = !ball.active;
+    }
+    public void close()
+    {
+        Application.Quit();
     }
    
 }

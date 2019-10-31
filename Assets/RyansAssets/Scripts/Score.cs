@@ -40,10 +40,29 @@ public class Score : MonoBehaviour
             Destroy(collision.gameObject);
 
         }
+        else if (collision.gameObject.tag == "rag")
+        {
+            splashPos = Vector3.zero;
+            for (int i = 0; i < collision.contactCount; i++)
+            {
+                splashPos += collision.contacts[i].point;
+            }
+            splashPos.y = 0;
+            splashPos = splashPos / collision.contactCount;
+
+            Instantiate(lavaSplash, splashPos, Quaternion.identity);
+            GameObject test = collision.gameObject;
+            while (!test.name.Contains("p3vr"))
+            {
+                test = test.transform.parent.gameObject;
+            }
+            Destroy(test);
+
+        }
         else if (collision.gameObject.tag != "bottom")
         {
             splashPos = Vector3.zero;
-            for(int i = 0; i < collision.contactCount; i++)
+            for (int i = 0; i < collision.contactCount; i++)
             {
                 splashPos += collision.contacts[i].point;
             }
@@ -54,7 +73,9 @@ public class Score : MonoBehaviour
 
             //kills += (int)collision.gameObject.GetComponent<RandomScore>().num;
             kills++;
+            //Debug.Log(collision.gameObject);
             Destroy(collision.gameObject);
         }
+        
     }
 }

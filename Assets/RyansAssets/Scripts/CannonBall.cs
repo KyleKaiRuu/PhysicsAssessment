@@ -19,14 +19,18 @@ public class CannonBall : MonoBehaviour
         {
             if (active)
             {
+                
                 RaycastHit hit;
                 Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out hit))
                 {
-                    target = hit.point;
-                    GameObject projectile = Instantiate(cannonBall, transform.position, Quaternion.identity);
-                    projectile.GetComponent<Rigidbody>().velocity = CalculateLaunchVelocityForTime(transform.position, target, timeTillImpact);
-                    Destroy(projectile, 15);
+                    if (hit.collider.gameObject.tag != "cannonball")
+                    {
+                        target = hit.point;
+                        GameObject projectile = Instantiate(cannonBall, transform.position, Quaternion.identity);
+                        projectile.GetComponent<Rigidbody>().velocity = CalculateLaunchVelocityForTime(transform.position, target, timeTillImpact);
+                        Destroy(projectile, 15);
+                    }
                 }
             }
         }
